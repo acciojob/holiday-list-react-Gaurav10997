@@ -41,7 +41,7 @@ const App = () => {
     <div id="main">
            <ul>
               {filterobj.map((el,index)=>{
-                return <li key={el.name}>{el.name}</li>
+                return <li key={`location${index+1}`}>{el.name}</li>
               })}
            </ul>
     </div>
